@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Kirana Mithra
+- Bill parsing lives in src/lib/bill-parser.ts with tests in src/test/bill-parser.test.ts; spoken price is the line amount, not per-unit (shopkeepers say the total for that item).
+- Saved bills are kept in browser localStorage (key kirana-mithra-bills) — no accounts yet, so a shared database would expose every shop's sales.
+- Voice uses the browser Web Speech API (te-IN / en-IN) and speechSynthesis; no API keys.
